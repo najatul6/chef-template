@@ -1,4 +1,4 @@
-import loading from "../../assets/loading.json";
+import loading from "../../../assets/loading.json";
 import Lottie from "lottie-react";
 
 const Loading = () => {
