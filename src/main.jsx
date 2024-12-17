@@ -6,6 +6,7 @@ import { RouterProvider } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { HelmetProvider } from "react-helmet-async";
 import mainRoutes from "./Routers/mainRoutes";
+import AuthProvider from "./providers/AuthProvider";
 
 const client = new QueryClient();
 createRoot(document.getElementById("root")).render(
