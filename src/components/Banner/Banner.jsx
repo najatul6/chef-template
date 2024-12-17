@@ -1,4 +1,4 @@
-import animation from "../assets/cooking.json";
+import animation from "../../assets/cooking.json";
 
 import Lottie from "lottie-react";
 const Banner = () => {
