@@ -13,6 +13,7 @@ import {
   deleteUser,
 } from "firebase/auth";
 import { useEffect } from "react";
+import PropTypes from "prop-types";
 
 export const AuthContext = createContext();
 
@@ -55,7 +56,7 @@ const AuthProvider = ({ children }) => {
     return () => {
         unSubscribe();
     };
-  }, []);
+  }, [auth]);
 
   const authInfo = {
     user,
@@ -74,4 +75,7 @@ const AuthProvider = ({ children }) => {
   );
 };
 
+AuthProvider.propTypes = {
+    children: PropTypes.node
+};
 export default AuthProvider;
