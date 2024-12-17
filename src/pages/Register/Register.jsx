@@ -16,8 +16,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
   const goTo = useNavigate();
-  const { createUser, signIn, user, setUser, updateUser } =
-    useContext(AuthContext);
+  const { createUser, setUser, updateUser } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -129,7 +128,7 @@ const Register = () => {
                 />
               </form>
             </div>
-            <Social/>
+            <Social />
             <div className="lottie flex-1 flex mx-20 ">
               <Lottie animationData={happy}></Lottie>
             </div>

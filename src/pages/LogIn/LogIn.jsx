@@ -1,12 +1,12 @@
 import Lottie from "lottie-react";
-import happy from "../../assets/happy.json";
+// import happy from "../../assets/happy.json";
 import { BiEnvelope, BiKey } from "react-icons/bi";
 import { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import loginAnimation from "../../assets/loginAnimation.json";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import Title from "../../components/Shared/Title/Title";
 import Social from "../../components/Shared/Social/Social";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -26,6 +26,7 @@ const LogIn = () => {
     signIn(email, pass)
       .then((res) => {
         const user = res.user;
+        console.log(user);
         alert("successfull");
         // axios
         //   .post(
