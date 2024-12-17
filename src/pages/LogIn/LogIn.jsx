@@ -1,7 +1,6 @@
 import Lottie from "lottie-react";
 import happy from "../../assets/happy.json";
 import { BiEnvelope, BiKey } from "react-icons/bi";
-import Social from "../components/Social";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -10,6 +9,7 @@ import axios from "axios";
 import loginAnimation from "../assets/loginAnimation.json";
 import Swal from "sweetalert2";
 import Title from "../../components/Shared/Title/Title";
+import Social from "../../components/Shared/Social/Social";
 
 const LogIn = () => {
   const { signIn } = useContext(AuthContext);
@@ -117,7 +117,7 @@ const LogIn = () => {
                 />
               </form>
             </div>
-            <Social></Social>
+            <Social/>
             <div className="lottie  flex-1 mx-20">
               <Lottie animationData={loginAnimation} loop={true}></Lottie>
             </div>
