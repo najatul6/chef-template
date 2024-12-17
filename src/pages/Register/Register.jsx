@@ -8,11 +8,11 @@ import {
 } from "react-icons/bi";
 import happy from "../../assets/happy.json";
 import { useContext } from "react";
-import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Title from "../../components/Shared/Title/Title";
 import Social from "../../components/Shared/Social/Social";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
   const goTo = useNavigate();

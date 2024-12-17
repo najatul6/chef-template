@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
+import Header from "../components/Shared/Header/Header";
 
 const RootLayout = () => {
   return (
     <div>
-      <Header></Header>
+      <Header/>
       <main className="overflow-x-clip">
         <Outlet></Outlet>
       </main>
