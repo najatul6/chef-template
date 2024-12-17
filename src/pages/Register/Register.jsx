@@ -6,7 +6,7 @@ import {
   BiRename,
   BiUser,
 } from "react-icons/bi";
-import happy from "../assets/happy.json";
+import happy from "../../assets/happy.json";
 import Social from "../components/Social";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
