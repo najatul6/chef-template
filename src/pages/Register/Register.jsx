@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import Title from "../components/Title";
 import {
   BiEnvelope,
   BiImageAdd,
@@ -12,6 +11,8 @@ import Social from "../components/Social";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import Title from "../../components/Shared/Title/Title";
 
 const Register = () => {
   const goTo = useNavigate();

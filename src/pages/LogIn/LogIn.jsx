@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import Title from "../components/Title";
 import happy from "../assets/happy.json";
 import { BiEnvelope, BiKey } from "react-icons/bi";
 import Social from "../components/Social";
@@ -10,6 +9,7 @@ import axios from "axios";
 
 import loginAnimation from "../assets/loginAnimation.json";
 import Swal from "sweetalert2";
+import Title from "../../components/Shared/Title/Title";
 
 const LogIn = () => {
   const { signIn } = useContext(AuthContext);
