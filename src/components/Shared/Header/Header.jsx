@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { RiMenuAddLine } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
 import { useContext, useState } from "react";
-import { AuthContext } from "../providers/AuthProvider";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);

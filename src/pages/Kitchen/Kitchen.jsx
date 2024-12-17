@@ -1,4 +1,4 @@
-import Title from "../components/Title";
+import Title from "../../components/Shared/Title/Title";
 
 const Kitchen = () => {
   return (
