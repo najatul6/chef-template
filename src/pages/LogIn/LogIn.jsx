@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import happy from "../assets/happy.json";
+import happy from "../../assets/happy.json";
 import { BiEnvelope, BiKey } from "react-icons/bi";
 import Social from "../components/Social";
 import { useContext } from "react";

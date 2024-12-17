@@ -7,12 +7,12 @@ import {
   BiUser,
 } from "react-icons/bi";
 import happy from "../../assets/happy.json";
-import Social from "../components/Social";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Title from "../../components/Shared/Title/Title";
+import Social from "../../components/Shared/Social/Social";
 
 const Register = () => {
   const goTo = useNavigate();
@@ -129,7 +129,7 @@ const Register = () => {
                 />
               </form>
             </div>
-            <Social></Social>
+            <Social/>
             <div className="lottie flex-1 flex mx-20 ">
               <Lottie animationData={happy}></Lottie>
             </div>
