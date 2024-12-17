@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { createContext } from "react";
-import app from "../firebase/firebase.config";
 import {
   getAuth,
   GoogleAuthProvider,
@@ -14,6 +13,7 @@ import {
 } from "firebase/auth";
 import { useEffect } from "react";
 import PropTypes from "prop-types";
+import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext();
 
