@@ -1,9 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
+import RootLayout from '../layouts/RootLayout';
 
 const mainRoutes =  createBrowserRouter([
     {
       path: "/",
-      element: <RootLayout></RootLayout>,
+      element: <RootLayout/>,
       errorElement: <Error></Error>,
       children: [
         {
